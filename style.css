@@ -1,0 +1,99 @@
+:root{
+  --ink: #1E140D;
+  --ink-soft: #2B1D14;
+  --cream: #F6EEE1;
+  --cream-soft: #EFE3D0;
+  --amber: #C89A4B;
+  --amber-dark: #A67C33;
+  --rust: #A6472C;
+  --forest: #4B5842;
+  --line: rgba(30,20,13,0.14);
+  --shadow: 0 18px 40px rgba(30,20,13,0.14);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+
+*{
+     box-sizing: border-box;
+ }
+
+body{
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink-soft);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img{
+     max-width: 100%; display: block; 
+    }
+
+h1, h2, h3{
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 0 0 0.5em 0;
+  line-height: 1.1;
+} 
+
+a{ 
+    color: inherit; 
+
+}
+
+.eyebrow{
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--rust);
+  display: inline-block;
+  margin-bottom: 0.9em;
+}
+
+.wrap{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.first{
+    background: var(--ink);
+  color: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 3px solid var(--amber);
+}
+
+
+.first .wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo{
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: var(--cream);
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.logo span{
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--amber);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
