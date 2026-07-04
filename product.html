@@ -1,91 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ember Roastery — Small-Batch Coffee</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember Roastery — Small-Batch Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Moumita Singh Roy Moon | ID: 2312186 -->
 
-    <header class = "first">
-        <div class = "wrap">
-            <a href = "index.html" class = "logo">Ember Roastery <span>Roastery </span></a>
+<!-- Moumita Singh Roy Moon | ID: 2312186 -->
 
-            <ul class = "navigation">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "product.html">Products</a></li>
-                <li><a href = "contact.html">Contact</a></li>
-            </ul>
-        </div>
-       </header>
-
-       <main>
-
-       <section class = "hero">
-        <div class = "wrap">
-            <div class = "hero-content">
-                <h1>Coffee that tastes like where it came from.</h1>
-                <p>We buy green beans directly from three family farms, roast them a few kilos at a time, and ship bags within 48 hours of coming out of the drum. No blends made to hide bad beans — just honest, traceable coffee.</p>
-
-                <div class = "cta">
-                    <a href = "product.html" class = "btn">Explore Our Coffee</a>
-
-                    <a href="contact.html" class="btn">Visit the Roastery</a>
-                </div>
-            </div>
-
-            <section class="products-intro">
-    <div class="wrap split">
-      <div class="split-text">
-        <span class="eyebrow">This Week's Batch</span>
-        <h1>Six beans, roasted Tuesday, shipped Wednesday.</h1>
-        <p>Every bag below comes from the same drum, the same roaster, and beans bought within the last two months — nothing pulled from long-term storage. The roast meter under each name shows exactly how light or dark we took it, so you know what you're brewing before it arrives.</p>
-      </div>
-
-      <div class="split-art">
-        <img src = "images (2).jpg" alt = "Coffee Bags">
-      </div>
-    </div>
-  </section>
-
+<header class="first">
   <div class="wrap">
-    <div class="cart-summary">
-      <div>
-        <span class="eyebrow">Your Bag</span>
-        <div><strong id="cart-count">0</strong> items — $<span id="cart-total">0.00</span></div>
+    <a href="index.html" class="logo">Ember Roastery <span>Roastery</span></a>
+
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <h1>Coffee that tastes like where it came from.</h1>
+      <p>We buy green beans directly from three family farms...</p>
+
+      <div class="cta">
+        <a href="product.html" class="btn">Explore Our Coffee</a>
+        <a href="contact.html" class="btn">Visit the Roastery</a>
       </div>
-      <div id="cart-message">Add a bag below to get started.</div>
     </div>
   </div>
+</section>
+
+
+<section class="products-intro">
+  <div class="wrap split">
+    <div class="split-text">
+      <span class="eyebrow">This Week's Batch</span>
+      <h1>Six beans, roasted Tuesday, shipped Wednesday.</h1>
+      <p>Every bag below comes from the same drum...</p>
+    </div>
+
+    <div class="split-art">
+      <img src="images (2).jpg" alt="Coffee Bags">
+    </div>
+  </div>
+</section>
+
+<!-- CART -->
 <div class="wrap">
-    <div class="product-grid">
+  <div class="cart-summary">
+    <div>
+      <span class="eyebrow">Your Bag</span>
+      <div><strong id="cart-count">0</strong> items — $<span id="cart-total">0.00</span></div>
+    </div>
+    <div id="cart-message">Add a bag below to get started.</div>
+  </div>
+</div>
 
-      <article class="product-card">
+
+<div class="wrap">
+  <div class="product-grid">
+
+
+    <article class="product-card">
         <div class="product-top">
-          <img src="images (3).jpg" alt="">
-          <div>
-            <h3 class="product-name">Yirgacheffe</h3>
-            <span class="product-origin">Ethiopia · Washed</span>
-          </div>
-        </div>
-        <div class="roast-meter">
-          Light
-          <div class="roast-track"><span class="roast-dot" style="left:15%"></span></div>
-          Dark
-        </div>
-        <p class="product-notes">Jasmine, bergamot, and a clean lemon finish. Brews beautifully as a pour-over.</p>
-
-        <div class="product-bottom">
-          <span class="product-price">$18.00 / 340g</span>
-          <button type="button" class="btn btn-primary btn-small" onclick="addToCart('Yirgacheffe', 18.00)">Add to Cart</button>
-        </div>
-      </article>
-
-       <article class="product-card">
-        <div class="product-top">
-          <img src="images (4).jpg" alt="">
+          <img src="images (4).jpg">
           <div>
             <h3 class="product-name">Huila</h3>
             <span class="product-origin">Colombia · Washed</span>
@@ -103,7 +92,8 @@
         </div>
       </article>
 
-      <article class="product-card">
+   
+    <article class="product-card">
         <div class="product-top">
           <img src="images (5).jpg" alt="">
           <div>
@@ -122,10 +112,10 @@
           <button type="button" class="btn btn-primary btn-small" onclick="addToCart('Mandheling', 17.00)">Add to Cart</button>
         </div>
       </article>
-
-      <article class="product-card">
+  
+    <article class="product-card">
         <div class="product-top">
-          <img src="images (6).jpg " alt="">
+          <img src="images (6).jpg" alt="">
           <div>
             <h3 class="product-name">Antigua</h3>
             <span class="product-origin">Guatemala · Washed</span>
@@ -143,35 +133,75 @@
         </div>
       </article>
 
-      <section class="section section-alt">
-    <div class="wrap split">
-      <div class="split-text">
-        <span class="eyebrow">Brewing at Home</span>
-        <h2>One grind size doesn't fit every method.</h2>
+    
+    <article class="product-card">
+        <div class="product-top">
+          <img src="images (3).jpg" alt="">
+          <div>
+            <h3 class="product-name">House Blend</h3>
+            <span class="product-origin">Colombia + Sumatra</span>
+          </div>
+        </div>
+        <div class="roast-meter">
+          Light
+          <div class="roast-track"><span class="roast-dot" style="left:85%"></span></div>
+          Dark
+        </div>
+        <p class="product-notes">Roasted dark for body and a bittersweet, cocoa-forward finish. Our espresso default.</p>
+        <div class="product-bottom">
+          <span class="product-price">$15.50 / 340g</span>
+          <button type="button" class="btn btn-primary btn-small" onclick="addToCart('House Blend', 15.50)">Add to Cart</button>
+        </div>
+      </article>
+
+  
+    <article class="product-card">
+      <div class="product-top">
+        <img src="images (6).jpg">
+        <div>
+          <h3>Costa Rica Decaf</h3>
+          <span>Costa Rica · Sugarcane Process</span>
+        </div>
+      </div>
+      <div class="roast-meter">
+          Light
+          <div class="roast-track"><span class="roast-dot" style="left:45%"></span></div>
+          Dark
+        </div>
+        <p class="product-notes">Milk chocolate and toasted almond, decaffeinated without losing the sweetness.</p>
+        <div class="product-bottom">
+          <span class="product-price">$17.50 / 340g</span>
+          <button type="button" class="btn btn-primary btn-small" onclick="addToCart('Costa Rica Decaf', 17.50)">Add to Cart</button>
+        </div>
+    </article>
+
+  </div>
+</div>
+
+
+<section class="section section-alt">
+  <div class="wrap split">
+    <div class="split-text">
+      <span class="eyebrow">Brewing at Home</span>
+      <h2>One grind size doesn't fit every method.</h2>
         <p>A pour-over wants a grind about the texture of table salt and a total brew time near three minutes. A French press wants it coarser, closer to breadcrumbs, so the mesh filter doesn't clog and the grounds don't turn bitter from over-extraction.</p>
         <p>If you're not sure where to start, ask us to grind your bag for the method you're using — every order form on the contact page has a note field for exactly that.</p>
       </div>
-      <div class="split-art">
-        <img src="images/brew-guide.svg" alt="Illustration of a pour-over dripper, kettle, and cup">
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
 
+<footer class="footer">
+  <div class="wrap">
+    <h3>Ember Roastery</h3>
+    <p>Small-batch coffee, roasted weekly...</p>
+    <p>&copy; 2024 Ember Roastery.</p>
+  </div>
+</footer>
 
-  <footer class="footer">
-    <div class="wrap">
-      
-            <h3>Ember Roastery</h3>
-      <p>Small-batch coffee, roasted weekly on the corner of 5th and Pine. We roast to be brewed, not to be stored.</p>
-      <p>&copy; 2024 Ember Roastery. All rights reserved.</p>
-    </div>
-      </footer>
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 
 </body>
 </html>
